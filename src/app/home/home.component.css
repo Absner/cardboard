@@ -1,0 +1,11 @@
+.video-small{
+    height: 113px;
+    width: 180px;
+    background-color: chartreuse;
+    position: relative;
+}
+.cubierta{
+    position: absolute;
+    width: 500px;
+    height: 110px;
+}
