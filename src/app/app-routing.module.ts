@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { DashboadComponent } from './dashboad/dashboad.component';
 import { PlaylistComponent } from './playlist/playlist.component';
+import { PlayVideoComponent } from './play-video/play-video.component';
 
 
 const routes: Routes = [
@@ -11,6 +12,7 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'dashboard', component: DashboadComponent },
   { path: 'dashboard/playList', component: PlaylistComponent },
+  { path: 'playVideo/:id', component: PlayVideoComponent },
   {
     path: '',
     redirectTo: '/home',

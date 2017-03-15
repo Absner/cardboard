@@ -1,5 +1,8 @@
 <nav>
     <div class="nav-wrapper light-blue darken-1">
+        <ul class="left hide-on-med-and-down">
+          <li><a [routerLink]="['/home']"><i class="material-icons">home</i></a></li>
+        </ul>
         <ul class="right hide-on-med-and-down">
             <li><a href="#" title="Uploar video"><i class="material-icons">present_to_all</i></a></li>
             <li><a [routerLink]="['/login']" title="Login"><i class="material-icons">perm_identity</i></a></li>
@@ -13,10 +16,10 @@
       <!-- Contenedor play list -->
       <div class="col s5 m8 offset-m2">
           <div class="card blue-grey darken-1">
-              <div class="card-content white-black">
+              <div class="card-content blue lighten-5">
                   <!-- incia contenedor de lso video del playlist -->
                   <div *ngFor="let video of playList">
-                  <div id="lista" class="row">
+                  <div id="lista" class="row" [routerLink]="['/playVideo', video.id ]">
                       <!-- imagen video playList -->
                       <div class="col s5 m3 video-small" >
                           <div class="cubierta">
