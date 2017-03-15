@@ -1,0 +1,60 @@
+    <nav class="light-blue darken-1">
+      <ul id="slide-out" class="side-nav fixed">
+          <li>
+              <div class="header-sidenav blue lighten-1"></div>
+          </li>
+          <li class="bold">
+              <a [routerLink]="['/dashboard']" class="waves-effect waves-blue">
+                  <i class="material-icons">present_to_all</i>Upload Video
+              </a>
+          </li>
+          <li class="bold">
+              <a href="#!" class="waves-effect waves-blue">
+                  <i class="material-icons">list</i>Play List 
+              </a></li>
+          <li class="bold">
+              <a [routerLink]="['/dashboard/playList']" class="waves-effect waves-blue">
+                  <i class="material-icons">settings_power</i>Exit  
+              </a></li>
+        </ul>
+      <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+    </nav>
+    <div class="row">
+        
+        <!-- Contenedor -->
+        <div class="col m9 offset-m3 offset-s4 margin-top-tabs">
+                      <!-- Contenedor play list -->
+      <div class="col s5 m8 offset-m2">
+          <div class="card blue-grey darken-1">
+              <div class="card-content white-black">
+                  <!-- incia contenedor de lso video del playlist -->
+                  <div *ngFor="let video of playList">
+                  <div id="lista" class="row">
+                      <!-- imagen video playList -->
+                      <div class="col s5 m3 video-small" >
+                          <div class="cubierta">
+                              
+                          </div>
+                          <iframe  width="190" height="113" [src]="" frameborder="0" allowfullscreen></iframe>
+                      </div>
+                      <!-- descripcion video PlayList -->
+                      <div class="col s5 m7">
+                          <ul>
+                              <li><h5>{{video.titulo}}</h5></li>
+                              <li>{{video.descripcion}}</li>
+                              <li>Me gusta <span>{{video.like}}</span></li>
+                              <li>No me gusta <span>{{video.nolike}}</span></li>
+                          </ul>
+                      </div>
+                  </div>
+                  <hr>
+                  </div>
+                  <!-- fin contenedor video play list -->
+              </div>
+          </div>
+      </div>
+        </div>
+        
+        <!-- fin contenedor -->
+
+    </div>

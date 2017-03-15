@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+.header-sidenav{
+    height: 150px;
+}
+.margin-top-tabs{
+    margin-top: 10px;
+}
+.video-small{
+    height: 113px;
+    width: 180px;
+    background-color: chartreuse;
+    position: relative;
+}
+.cubierta{
+    position: absolute;
+    width: 500px;
+    height: 110px;
+}
